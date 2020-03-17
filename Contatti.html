@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contatta</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'/>
+    <link rel='stylesheet' href='style.css'/>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport:" content="width=device, initial-scale=1">
+  </head>
+  <body>
+
+    <header class="header clearfix">
+      <div class="header__img">
+          <img src="web_developer.svg" alt="">
+      </div>
+      <a href="Home.html" class="header__logo">Home</a>
+      <a href="Contatti.html" class="header__logo">Contatta</a>
+      <a href="" class="header__icon-bar">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+      <ul class="header__menu animate">
+        <li class="header__menu__item"> <a href="https://www.linkedin.com/in/anna-lamboglia-599013198/">Linkedin</a></li>
+        <li class="header__menu__item"><a href="https://www.facebook.com/annalamboglia99">Facebook</a></li>
+        <li class="header__menu__item"><a href="https://www.youtube.com/channel/UCPaxhN85kto0QMzkLc4wf-w?view_as=subscriber">Youtube</a></li>
+        <li class="header__menu__item"><a href="https://www.instagram.com/_annaalcontrario/">Instagram</a></li>
+        <li class="header__menu__item"><a href="https://vm.tiktok.com/gQXxWT/">Tiktok</a></li>
+      </ul>
+    </header>
+
+
+
+<form class="form" action="http://localhost:8000" method="post">
+  <fieldset>
+    <legend>Dati</legend>
+  <label for="">Nome</label>
+  <input type="text" name="Nome" value="">
+
+  <label for="">Cognome</label>
+  <input type="text" name="Cognome" value="">
+  </fieldset>
+
+  <fieldset>
+    <label for="">Email*</label>
+    <input required type="email" name="Email" value="">
+    <p>Richiesta*
+      <textarea required name="Richiesta" rows="8" cols="80"></textarea>
+    </p>
+        <br>
+          <button type="submit" name="button">Invia</button>
+  </fieldset>
+
+
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </body>
+</html>

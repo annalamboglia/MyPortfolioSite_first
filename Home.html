@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>My Portfolio</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'/>
+  <link rel='stylesheet' href='style.css'/>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport:" content="width=device, initial-scale=1">
+
+</head>
+
+<body>
+
+  <header class="header clearfix">
+    <div class="header__img">
+        <img src="web_developer.svg" alt="">
+    </div>
+    <a href="Home.html" class="header__logo">Home</a>
+    <a href="Contatti.html" class="header__logo">Contatta</a>
+    <a href="" class="header__icon-bar">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+    <ul class="header__menu animate">
+      <li class="header__menu__item"> <a href="https://www.linkedin.com/in/anna-lamboglia-599013198/">Linkedin</a></li>
+      <li class="header__menu__item"><a href="https://www.facebook.com/annalamboglia99">Facebook</a></li>
+      <li class="header__menu__item"><a href="https://www.youtube.com/channel/UCPaxhN85kto0QMzkLc4wf-w?view_as=subscriber">Youtube</a></li>
+      <li class="header__menu__item"><a href="https://www.instagram.com/_annaalcontrario/">Instagram</a></li>
+      <li class="header__menu__item"><a href="https://vm.tiktok.com/gQXxWT/">Tiktok</a></li>
+    </ul>
+  </header>
+
+<section class="cover">
+  <div class="cover__filter">
+  </div>
+  <div class="cover__caption">
+    <div class="cover__caption__copy">
+      <img src="Profilo.jpg" alt="foto">
+      <h1>Anna Lamboglia</h1>
+        <h2 id="parole" ><em>Freelancer</em></h2>
+        <a href="Contatti.html" class="button" >CONTATTA</a>
+    </div>
+  </div>
+</section>
+
+<section class="cards clearfix">
+  <div class="card">
+    <img class="card__image" src="foto.jpg" alt="Videomaking" width="200" height="150">
+    <div class="card__copy">
+      <h3>Photography & VideoMaking</h3>
+      <p>Adobe Premiere, Vegas, Lightroom </p>
+        <p><a class="button due" href=""><strong>Photo & Video</strong></a> </p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card__image" src="programmazione.jpg" alt="Programmazione" width="200" height="150">
+        <div class="card__copy">
+          <h3>Informatic Engineer</h3>
+          <p>HTML, CSS, C++, SQL Programming</p>
+          <p><a class="button due" href=""><strong>Work</strong></a> </p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__image" src="Socialmedia.jpg" alt="Social Media Manager" width="200" height="150">
+            <div class="card__copy">
+              <h3>Social Media Manager</h3>
+              <p>Instagram, Tiktok, Twitter, SEO </p>
+                  <p><a class="button due" href=""><strong>Project</strong></a> </p>
+                </div>
+              </div>
+</section>
+
+<section class="scheda clearfix">
+
+  <div class="scheda_image"></div>
+    <div class="scheda_copy">
+          <h3 id="scheda_copy_text">Chi Sono</h3>
+        <div class="scheda_copy_text_list">
+          <p style="line-height:30px;">
+            Mi chiamo Anna Lamboglia, ho 20 anni e studio Ingegneria Informatica presso l'università Federico II di Napoli.
+            <br>
+              Non sono mai riuscita a darmi una <em>definizione</em>, ma se proprio devo "etichettarmi" la parola che mi carattarizza è <strong>curiosità</strong>.
+              Fin da piccola ho sempre avuto tantissime passioni: video, musica, programmazione, marketing...
+              Con il tempo ho sempre approfondito i vari campi ed in particolare il lato informatico frequentando Ingegneria Informatica alla Federico II di Napoli
+          </p>
+      </div>
+
+    </div>
+</section>
+
+
+<section class="banner clearfix">
+  <div class="banner_image"></div>
+    <div class="banner_copy">
+          <h3 id="banner_copy_text">Soft Skills</h3>
+        <div class="banner_copy_text_list">
+          <img src="problem_solving.svg" alt="">
+          <p>Problem Solving</p>
+      </div>
+      <div class="banner_copy_text_list">
+        <img src="conversation_.svg" alt="">
+        <p>Communication</p>
+    </div>
+    <div class="banner_copy_text_list">
+      <img src="team_work.svg" alt="">
+      <p>Team Building</p>
+  </div>
+    </div>
+</section>
+
+
+<section class="low ">
+
+  <section class="low_2">
+    <div class="low_img">
+      <img src="Scritta_colorata.png" alt="Start2impact" width="410px" height="100px">
+    </div>
+
+      <div class="low_img2">
+        <img style="border-radius:12%; margin-top:1%" src="start2inspire.jpg" alt="Start2inspire" width="600">
+      </div>
+
+  </section class="low_2">
+
+
+    <div class="low_scritta">
+      <p class="low_titolo"><strong>Cosa so fare?</strong></p>
+    </div>
+
+      <ul class="low_scritta_2">
+      <p>Sulla piattaforma di Start2impact sono riuscita a portare a termine vari progetti tra i quali:</p>
+      <li>Scrittura</li>
+      <li>Seo</li>
+      <li>HTML</li>
+      </ul>
+
+
+</section>
+
+<section>
+
+      <div class="end">
+        <p class="end">“Non ho nessun talento speciale, sono solo dannatamente curioso” <br> Albert Einstein</p>
+      </div>
+  </section>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="array.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $(".header__icon-bar").click(function(e){
+      $(".header__menu").toggleClass('is-open');
+      e.preventDefault();
+    });
+   });
+
+</script>
+
+  </body>
+</html>
